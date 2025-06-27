@@ -1,0 +1,22 @@
+[project]
+name = "infininode-advanced-security-pack"
+description = "A standalone security scanner for ComfyUI environments, providing automatic offline scanning for file integrity, malware detection, vulnerability assessment, and system hardening at startup."
+version = "1.1.0"
+license = { file = "LICENSE" }
+dependencies = [
+    "yara-python>=4.0.0",
+    "cryptography>=3.4.0",
+    "requests>=2.25.0",
+    "bcrypt>=3.2.0",
+    "PyJWT>=2.0.0",
+    "argon2-cffi>=21.0.0"
+]
+
+[project.urls]
+Repository = "https://github.com/InfiniNode/infininode-advanced-security-pack"
+# Used by Comfy Registry https://comfyregistry.org
+
+[tool.comfy]
+PublisherId = "Infininode (Azazeal)"
+DisplayName = "InfiniNode Advanced Security Pack"
+Icon = "icon.svg" 
